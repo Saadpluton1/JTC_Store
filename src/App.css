@@ -1,0 +1,417 @@
+:root {
+    --color1: "#E0201C",
+        --color2: "#E0201C",
+}
+
+body {
+    margin: 0;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('../Fonts/Bebas-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../Fonts/Poppins-Regular.ttf');
+}
+
+body {
+    font-family: 'bebas';
+}
+
+.App {
+    position: relative;
+}
+
+.NavMainHolder {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.HeaderLogoDiv {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    align-items: center;
+}
+
+.HeaderLogoDiv img {
+    width: 100%;
+}
+
+.HeaderItemsHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+
+.HeaderItemsHolder p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-inline: 10px;
+    font-size: 14px;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+.NavMain {
+    margin: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ButtonLogin {
+    padding: 8px 16px;
+    border: 2px solid black;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+
+.NavtoolsDiv {
+    width: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavtoolsDiv * {
+    margin-inline: 5%;
+}
+
+.section1 {
+    padding: 13% 2% 10% 2% !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.redColor {
+    color: #E0201C;
+}
+
+.section1-inner1 {
+    padding-inline: 5%;
+    flex: 1;
+    margin-top: 2%;
+}
+
+.section1-inner1 p {
+
+    width: 65% !important;
+    line-height: 60px;
+}
+
+.section1-inner2 {
+    padding-inline: 5%;
+    flex: 1;
+}
+
+.section1-inner1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.SignupBtnArea {
+    display: flex;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.Signuptxt {
+    font-size: 16px;
+    font-family: 'poppins';
+    font-weight: 500;
+    margin-right: 20px;
+    color: rgba(43, 43, 43, 1);
+}
+
+.SignUpBtn {
+    background-color: #E0201C;
+    border-radius: 50px;
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.SocialIconsTab {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    padding: 5px 5px 5px 10px;
+    border-radius: 10px 0 0 10px;
+    background-color: #E0201C;
+}
+
+.SocialIconsInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SocialIconDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    width: 20px;
+}
+
+.SocialIconDiv img {
+    width: 100%;
+}
+
+.section2 {
+    background-color: white;
+    padding: 3% 5%;
+
+}
+
+.section2-r1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section2-r1-c1 {
+    color: rgba(43, 43, 43, 1);
+    font-family: 'bebas';
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 54px;
+}
+
+.section2-r1-c2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: max-content;
+    font-size: 18px;
+    font-family: 'poppins';
+    font-weight: 500;
+    color: rgba(165, 165, 165, 1);
+}
+
+.section2-r1-c2 div {
+    margin-inline: 10px;
+    cursor: pointer;
+}
+
+.section2-r1-c2-active {
+    color: rgba(62, 62, 62, 1) !important;
+    position: relative;
+}
+
+.redDot {
+    position: absolute;
+    width: 8px !important;
+    top: -12px;
+    right: -15px;
+}
+
+.redDot img {
+    width: 100%;
+}
+
+.CardsArea {
+    padding: 5% 0;
+}
+
+.CardsHolder {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Card {
+    width: 220px;
+    height: auto;
+    margin: 15px 20px;
+    position: relative;
+}
+
+.show {
+    display: block !important;
+}
+
+.SoldTag {
+    z-index: 1;
+    display: none;
+    background-color: #E0201C;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'poppins';
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.CardInner {
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 10px;
+    padding: 20px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.CardImgHolder {
+    width: 100px;
+    margin-inline: auto;
+}
+
+.CardImgHolder img {
+    width: 100%;
+}
+
+.ItemTitle {
+    font-size: 16px;
+    font-family: 'poppins';
+    font-weight: 500;
+    text-align: center;
+    margin: 2px 0;
+}
+
+.ItemDesc {
+    font-size: 10px;
+    font-family: 'poppins';
+    font-weight: 500;
+    text-align: center;
+    margin: 2px 0;
+
+}
+
+.CardRating {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.starHolder {
+    margin-inline: 3px;
+    width: 15px;
+    display: flex;
+}
+
+.starHolder img {
+    width: 100%;
+}
+.Card:hover .HoverOnCard{
+    display: block;
+}
+.HoverOnCard {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.HoverOnCardR1 {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.discountbox {
+    padding: 4px 8px;
+    font-size: 12px;
+    font-family: 'poppins';
+    font-weight: 500;
+    color: white;
+    background-color: rgba(62, 62, 62, 1);
+}
+
+.HeartHolder {
+    width: 20px;
+    margin-inline: 10px;
+    cursor: pointer;
+
+}
+
+.HeartHolder img {
+    width: 100%;
+}
+
+.HoverOnCardR2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.BtnHolderCardHover {
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 3px;
+    width: 60%;
+    border: 2px dashed rgba(224, 32, 28, 1);
+}
+
+.BtnHolderCardHoverInner {
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 4px 20px;
+    text-align: center;
+    background-color: rgba(62, 62, 62, 1);
+    color: white;
+    font-size: 14px;
+    font-family: 'poppins';
+
+
+}
+
+.HoverOnCardR3 {
+    margin-top: 15px;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.HoverOnCardR3 div {
+    margin-inline: 2px;
+}
+
+.cardHoverQuantity {
+    background-color: white;
+    border: 1px solid rgba(62, 62, 62, 1);
+    border-radius: 5px;
+    padding: 5px 40px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'poppins'
+}
+
+.cardHoverCartBtn {
+    display: flex;
+    align-items: center;
+    background-color: #E0201C;
+    color: white;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+}

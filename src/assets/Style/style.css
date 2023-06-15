@@ -1,0 +1,117 @@
+:root {
+    --color1: "#E0201C",
+        --color2: "#E0201C",
+}
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('../Fonts/Bebas-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../Fonts/Poppins-Regular.ttf');
+}
+
+body {
+    font-family: 'bebas';
+}
+
+.App {
+    position: relative;
+}
+
+.NavMainHolder {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.HeaderLogoDiv {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    align-items: center;
+}
+
+.HeaderLogoDiv img {
+    width: 100%;
+}
+
+.HeaderItemsHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+
+.HeaderItemsHolder p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-inline: 10px;
+    font-size: 14px;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+.NavMain {
+    margin: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ButtonLogin {
+    padding: 8px 16px;
+    border: 2px solid black;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+
+.NavtoolsDiv {
+    width: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavtoolsDiv * {
+    margin-inline: 5%;
+}
+
+.section1 {
+    padding: 10% 2% 2% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.redColor {
+    color: #E0201C;
+}
+
+.section1-inner1 {
+    padding-inline: 5%;
+    flex: 1;
+    width: 60%;
+}
+
+.section1-inner2 {
+    padding-inline: 5%;
+    flex: 1;
+}
+
+.section1-inner1 {
+    font-size: 60px;
+    font-weight: 400;
+}
