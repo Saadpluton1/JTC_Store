@@ -19,12 +19,84 @@ body {
 }
 
 body {
-    font-family: 'bebas';
+    font-family: 'poppins' !important;
 }
 
 .App {
     position: relative;
 }
+
+
+.Mobile-Navbar {
+    display: none;
+    justify-content: space-between;
+    padding: 5% 4%;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    .Mobile-Navbar {
+        display: flex !important;
+    }
+
+    .NavMainHolder {
+        display: none !important;
+    }
+
+    .MobileNavbarHolder {
+        display: block !important;
+    }
+
+
+}
+
+.MobileNavbarHolder {
+    display: none;
+}
+
+
+.Mobile-nav-logo {
+    width: 30%;
+}
+
+.Mobile-nav-logo img {
+    width: 100%;
+}
+
+.DropDown-nav {
+    display: none;
+    z-index: 5;
+    width: 82%;
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    margin-inline: 4%;
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.253);
+
+}
+
+.margin-top-10 {
+    margin-top: 10%;
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+.DropDown-nav div p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.DropDown-nav div p:active {
+    color: #E0201C;
+}
+
 
 .NavMainHolder {
     position: absolute;
@@ -114,9 +186,47 @@ body {
     line-height: 60px;
 }
 
+@media(max-width:767px) {
+    .section1-inner1 p {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .SignupBtnArea {
+        justify-content: center;
+        margin-bottom: 20%;
+    }
+
+    .section2-r1-c1 {
+        margin: 10% auto;
+        text-align: center;
+    }
+
+    .section2-r1-c2 {
+        margin-inline: auto;
+    }
+
+    .CommaIcon {
+        margin: 5% auto;
+    }
+
+    .Testimonial-controls {
+        width: 100%;
+    }
+
+    .Testimonial-arrows {
+        width: 30%;
+    }
+}
+
+.NavtoolsDiv * {
+    cursor: pointer;
+}
+
 .section1-inner2 {
     padding-inline: 5%;
     flex: 1;
+    min-width: 280px;
 }
 
 .section1-inner1 {
@@ -128,6 +238,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 15%;
+    cursor: pointer;
 }
 
 .Signuptxt {
@@ -169,6 +280,7 @@ body {
     justify-content: center;
     margin: 5px 0;
     width: 20px;
+    cursor: pointer;
 }
 
 .SocialIconDiv img {
@@ -183,6 +295,7 @@ body {
 
 .section2-r1 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -231,9 +344,14 @@ body {
     padding: 5% 0;
 }
 
+.font-bebas {
+    font-family: 'bebas' !important;
+}
+
 .CardsHolder {
     display: flex;
-    justify-content: space-around;
+
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -269,6 +387,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-self: center;
+    position: relative;
 }
 
 .CardImgHolder {
@@ -289,6 +408,7 @@ body {
 }
 
 .ItemDesc {
+    display: none;
     font-size: 10px;
     font-family: 'poppins';
     font-weight: 500;
@@ -312,22 +432,30 @@ body {
 .starHolder img {
     width: 100%;
 }
-.Card:hover .HoverOnCard{
-    display: block;
+
+.Card:hover .HoverOnCard {
+    /* display: flex; */
+    opacity: 1;
 }
+
 .HoverOnCard {
     z-index: 2;
-    display: none;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out !important;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
 .HoverOnCardR1 {
-    margin-top: 20px;
+    margin-top: 3%;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -358,11 +486,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 1%;
 }
 
 .BtnHolderCardHover {
-    margin-top: 10px;
+    margin-top: 2%;
     border-radius: 30px;
     padding: 3px;
     width: 60%;
@@ -372,7 +500,7 @@ body {
 .BtnHolderCardHoverInner {
     cursor: pointer;
     border-radius: 15px;
-    padding: 4px 20px;
+    padding: 2px 20px;
     text-align: center;
     background-color: rgba(62, 62, 62, 1);
     color: white;
@@ -383,9 +511,10 @@ body {
 }
 
 .HoverOnCardR3 {
-    margin-top: 15px;
+    margin-bottom: 3%;
     display: flex;
     width: 80%;
+
     justify-content: center;
     margin-inline: auto;
 }
@@ -414,4 +543,271 @@ body {
     border-radius: 5px;
     padding: 7px;
     cursor: pointer;
+}
+
+.See-more-btn {
+    background-color: #E0201C;
+    border-radius: 25px;
+    padding: 8px 16px;
+    text-align: center;
+    margin: 4% auto 0 auto !important;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    width: max-content;
+    border: none;
+    font-family: 'poppins';
+    cursor: pointer;
+}
+
+.bg-black {
+    background-color: #2B2B2B !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.showFlex {
+    display: flex !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30% !important;
+}
+
+.red {
+    color: #E0201C !important;
+}
+
+.white {
+    color: white;
+}
+
+.Testimonial-section {
+    padding: 8% 12%;
+    background-color: white;
+}
+
+.Testimonial-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Testimonial-heading {
+    margin: 0 auto 3% auto !important;
+}
+
+.Testimonial-txt1 {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.Testimonial-txt2 {
+    font-weight: 500;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'bebas';
+}
+
+.Testimonial-left-section {
+    flex: 1;
+    min-width: 280px;
+}
+
+.testimonial-image {
+    width: 80%;
+    margin-inline: auto !important;
+}
+
+.testimonial-image img {
+    width: 100%;
+}
+
+.Testimonial-right-section {
+    flex: 1;
+    min-width: 280px;
+
+}
+
+.CommaIcon {
+    width: 25%;
+}
+
+.CommaIcon img {
+    width: 100%;
+}
+
+.Testimonial-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8D8D8D;
+    margin-top: 3%;
+}
+
+.Testimonial-wroteBy {
+    font-weight: 700;
+    font-size: 20px;
+    color: #2B2B2B;
+}
+
+.Testimonial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Testimonial-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 5%;
+}
+
+.testimonial-tab {
+    width: 35px !important;
+    cursor: pointer;
+}
+
+.testimonial-tab img {
+    width: 100%;
+}
+
+.Testimonial-arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 16%;
+    margin-top: 4%;
+
+}
+
+.left-control {
+    background-color: #2B2B2B;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.right-control {
+    background-color: #E0201C;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.Footer {
+    background-color: #3E3E3E !important;
+    background: url('../src/assets/Images/FooterBack.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5%;
+}
+
+.FooterInner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Footer-section {
+    flex: 1;
+    min-width: 280px;
+    margin: 3% 2%;
+}
+
+.FooterLogo {
+    width: 60%;
+    cursor: pointer;
+}
+
+.FooterLogo img {
+    width: 100%;
+}
+
+.Footer-desc {
+    color: #A1A1A1;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 4%;
+
+}
+
+.Footer-heading {
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+}
+
+.EmailInput {
+    background-color: #2B2B2B;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.inputForEmail {
+    flex: 65%;
+    background-color: transparent;
+    padding: 10px 5px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.inputForEmail::placeholder {
+    font-size: 16px;
+    font-weight: 500
+}
+
+.emailSubmit-btn {
+    flex: 35%;
+    background-color: #E0201C;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Social-section {
+    margin-top: 15%;
+}
+
+.SocialIconsDiv {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
+
+}
+
+.Social-icon-img {
+    width: 35px;
+    cursor: pointer;
+}
+
+.Social-icon-img img {
+    width: 100%;
 }
